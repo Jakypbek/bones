@@ -1,4 +1,6 @@
-package peaksoft;
+package peaksoft.firstRound;
+
+import peaksoft.dice;
 
 import java.util.Random;
 import java.util.Scanner;
