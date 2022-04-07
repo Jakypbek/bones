@@ -7,7 +7,10 @@ public abstract class Gamer {
     private int prediction;
     private int dicePoints;
     private int result;
-    private boolean cheated;
+    private boolean cheating;
+    private boolean luckyCheating;
+    private int precent;
+    private int penalty;
 
     public Gamer() {
     }
@@ -59,12 +62,36 @@ public abstract class Gamer {
         this.result = result;
     }
 
-    public boolean isCheated() {
-        return cheated;
+    public boolean isCheating() {
+        return cheating;
     }
 
-    public void setCheated(boolean cheated) {
-        this.cheated = cheated;
+    public void setCheating(boolean cheating) {
+        this.cheating = cheating;
+    }
+
+    public boolean isLuckyCheating() {
+        return luckyCheating;
+    }
+
+    public void setLuckyCheating(boolean luckyCheating) {
+        this.luckyCheating = luckyCheating;
+    }
+
+    public int getPrecent() {
+        return precent;
+    }
+
+    public void setPrecent(int precent) {
+        this.precent = precent;
+    }
+
+    public int getPenalty() {
+        return penalty;
+    }
+
+    public void setPenalty(int penalty) {
+        this.penalty += penalty;
     }
 
     @Override
@@ -75,4 +102,6 @@ public abstract class Gamer {
                 ", dicePoints=" + dicePoints +
                 '}';
     }
+
+    public abstract void setCheating(String cheating);
 }
