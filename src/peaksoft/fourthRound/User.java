@@ -6,10 +6,4 @@ public class User extends Gamer {
         super("User");
     }
 
-    @Override
-    public void setCheating(String cheating) {
-        if (cheating.equals("Y")) {
-            super.setCheating(true);
-        }
-    }
 }

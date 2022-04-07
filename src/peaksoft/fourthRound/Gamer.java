@@ -66,8 +66,9 @@ public abstract class Gamer {
         return cheating;
     }
 
-    public void setCheating(boolean cheating) {
-        this.cheating = cheating;
+    public void setCheating(String cheating) {
+        if (cheating.toLowerCase().equals("y"))
+        this.cheating = true;
     }
 
     public boolean isLuckyCheating() {
@@ -103,5 +104,4 @@ public abstract class Gamer {
                 '}';
     }
 
-    public abstract void setCheating(String cheating);
 }

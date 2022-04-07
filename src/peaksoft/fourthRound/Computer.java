@@ -7,8 +7,4 @@ public class Computer extends Gamer {
         super("Computer");
     }
 
-    @Override
-    public void setCheating(String cheating) {
-
-    }
 }
